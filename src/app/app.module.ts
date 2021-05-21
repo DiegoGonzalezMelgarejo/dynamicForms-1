@@ -7,6 +7,7 @@ import { EQ1InfoClientePerfilComponent } from './components/act1/eq1-info-clietn
 import { EQ2InfoModelCarsComponent } from './components/act1/eq2-info-model-cars/eq2-info-model-cars.component';
 import { ActividadPropuestaComponent } from './components/actividad-propuesta/actividad-propuesta.component';
 import { MenuComponent } from './components/util/menu/menu.component';
+import { ConcessionaireService } from './services/concessionaire.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { MenuComponent } from './components/util/menu/menu.component';
     MenuComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [ConcessionaireService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
